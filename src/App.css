@@ -1,0 +1,12 @@
+:root {
+  --primary: "#404937";
+  --secondary: "#98734b";
+  --background: "#dac0a5";
+  --text: "#11120d";
+}
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--background);
+}

@@ -1,0 +1,53 @@
+.sideBar {
+  border-radius: 10px;
+  padding: 20px;
+  margin-block: 20px;
+}
+
+.projects {
+  height: 74vh;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.project {
+  text-align: start;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.project.open {
+  animation: slidein 0.5s ease-in-out forwards; /* Apply animation only when opened */
+}
+
+.project.closed h1 {
+  max-height: 40px; /* Enough to show only the h1 */
+}
+
+.project.open h1 {
+  max-height: 500px; /* Large enough for full content */
+  padding: 10px 0;
+  width: 100%;
+}
+
+.project.open p {
+  width: 90%; /* Fixed width for the paragraph */
+  margin: 0 auto; /* Center align paragraph */
+}
+
+.project:not(:last-child) {
+  border-bottom: 2px solid #98734b;
+  padding-bottom: 10px; /* Space between content and border */
+}
+
+@keyframes slidein {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
