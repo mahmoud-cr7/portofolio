@@ -2,6 +2,7 @@
   border-radius: 10px;
   padding: 20px;
   margin-block: 20px;
+  overflow: hidden;
 }
 
 .projects {
@@ -18,22 +19,26 @@
 }
 
 .project.open {
-  animation: slidein 0.5s ease-in-out forwards; /* Apply animation only when opened */
+  animation: slidein 0.5s ease-in-out forwards;
 }
 
 .project.closed h1 {
-  max-height: 40px; /* Enough to show only the h1 */
+  max-height: 40px;
 }
 
 .project.open h1 {
-  max-height: 500px; /* Large enough for full content */
+  max-height: 500px;
   padding: 10px 0;
   width: 100%;
 }
 
 .project.open p {
-  width: 90%; /* Fixed width for the paragraph */
-  margin: 0 auto; /* Center align paragraph */
+  width: 500px; /* Set a fixed width */
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  margin: 5 auto;
 }
 
 .project:not(:last-child) {
@@ -49,5 +54,13 @@
   to {
     max-height: 500px;
     opacity: 1;
+  }
+}
+@media (min-width: 1399px) {
+  .sideBar {
+    height: 74vh;
+  }
+  .projects {
+    height: 70vh;
   }
 }

@@ -19,39 +19,29 @@ const SideBar: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "Project 1",
+      title: "Online Store",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
+        " Embark on a collaborative journey with our team collage project, dedicated to crafting an innovative online store for selling tech products using React JS. Unite your expertise in design, development, and user experience to deliver a seamless shopping experience.",
     },
     {
-      title: "Project 2",
+      title: "Product Builder",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
+        " Unleash your imagination with our website project, where React and TypeScript converge to empower you in building and showcasing dynamic products. Seamlessly blend creativity and functionality as you craft an immersive digital experience tailored to your vision",
     },
     {
-      title: "Project 3",
+      title: " post blog",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
+        " This project is a React and TypeScript-based blogging platform featuring post creation, comments, likes, and real-time interactions. Users can log in via OAuth (Google, GitHub, etc.) for secure access. Each post has its own comment section and like button, enabling user engagement. The platform supports rich text editing and is fully responsive across devices. It's ideal for creating a modern, interactive blog with secure user authentication.",
     },
     {
-      title: "Project 4",
+      title: " BICS Store",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
+        "Embark on a dynamic journey of creativity with our collage project aimed at crafting a mobile application for selling cutting-edge tech products. Dive into the realms of design, coding, and user experience to fashion a platform that seamlessly connects tech enthusiasts with their next must-have gadgets",
     },
     {
-      title: "Project 5",
+      title: "SCMS",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
-    },
-    {
-      title: "Project 6",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
-    },
-    {
-      title: "Project 7",
-      description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem unde, inventore numquam delectus voluptatum, iste totam perferendis laudantium accusantium quisquam alias expedita? Optio facere deleniti ea sit magnam voluptatum. Id!",
+        " The graduation project focuses on developing a robust Learning Management System (LMS) utilizing HTML, CSS, and JavaScript. This system aims to streamline educational processes by providing an intuitive platform for course management, student tracking, and resource sharing. The project emphasizes responsive design, ensuring accessibility across various devices. Additionally, it integrates interactive features to enhance user engagement and facilitate seamless learning experiences.",
     },
   ];
 

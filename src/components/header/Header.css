@@ -28,3 +28,9 @@
 .links p:hover {
   cursor: pointer;
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+}
