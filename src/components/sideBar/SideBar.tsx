@@ -8,8 +8,10 @@ interface Project {
   description: string;
 }
 
-const SideBar: React.FC = () => {
-  const [openProject, setOpenProject] = useState<number>(0); // 0-indexed, the first project is open by default
+const SideBar: React.FC<{ isProjectHovered: boolean }> = ({
+  isProjectHovered,
+}) => {
+  const [openProject, setOpenProject] = useState<number>(0);
 
   const toggleProject = (index: number) => {
     if (openProject !== index) {
@@ -47,7 +49,10 @@ const SideBar: React.FC = () => {
 
   return (
     <div>
-      <div className="sideBar" style={{ backgroundColor: Colors.primary }}>
+      <div
+        className={`sideBar ${isProjectHovered ? "projects-hovered" : ""}`}
+        style={{ backgroundColor: Colors.primary }}
+      >
         <div className="projects">
           {projects.map((project, index) => (
             <div

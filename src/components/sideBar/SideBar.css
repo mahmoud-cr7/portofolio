@@ -6,7 +6,7 @@
 }
 
 .projects {
-  height: 74vh;
+  /* height: 70vh; */
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
@@ -45,7 +45,11 @@
   border-bottom: 2px solid #98734b;
   padding-bottom: 10px; /* Space between content and border */
 }
-
+.sideBar.projects-hovered {
+  filter: blur(2px); 
+  /* background-color: #98734b; */
+  transition:  0.3s;
+}
 @keyframes slidein {
   from {
     max-height: 0;

@@ -5,7 +5,7 @@ import arrow from "../../assets/arrow.png";
 import quate from "../../assets/quate.png";
 import profile from "../../assets/profile6.png";
 
-const Content = () => {
+const Content = ({ isProjectHovered , isContactHovered, isAboutHovered }: { isProjectHovered: boolean , isContactHovered: boolean, isAboutHovered: boolean }) => {
   return (
     <>
       <div className="content">
@@ -25,7 +25,10 @@ const Content = () => {
             </div>
           </div>
           <div className="second">
-            <div className="brief" style={{ backgroundColor: Colors.primary }}>
+            <div
+              className={`brief ${isAboutHovered ? "brief-hovered" : ""}`}
+              style={{ backgroundColor: Colors.primary }}
+            >
               <img src={brief} alt="" />
               <p style={{ color: Colors.secondary }}>
                 Hi, I’m Mahmoud, a software developer with experience in
@@ -38,7 +41,7 @@ const Content = () => {
               </p>
             </div>
             <div
-              className="contact"
+              className={`contact ${isContactHovered ? "contact-hovered" : ""}`}
               style={{ backgroundColor: Colors.secondary }}
               onClick={() =>
                 (window.location.href = "mailto:mahmoudwageeh666@gmail.com")
@@ -52,7 +55,7 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <SideBar />
+        <SideBar isProjectHovered={isProjectHovered} />
       </div>
     </>
   );
